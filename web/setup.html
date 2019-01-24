@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The course website for GAME 615 - Game Development at American University in 2019.">
+    <meta name="author" content="Mike Treanor">
+    <title>GAME 615 - Game Development - American University</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">GAME 615 - Game Development</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#examples">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#assignments">Assignments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#syllabus">Syllabus</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Setting up your development environment</h1>
+          <p class="lead">GAME 615 Spring 2019 - American University</p>
+      </div>
+    </div>
+    <div class="container pb-5">
+      <h2 class="mt-6">Unity</h2>
+      <ul>
+        <li>Download and install Unity3d 2018.3</li>
+        <ul>
+      	   <li>Include the "WebGL" package</li>
+        </ul>
+      	<li>This will take a while and require something like 10 gigabytes of space on your computer</li>
+        <li>Open Unity and create a user name and password</li>
+      </ul>
+    </div>
+    <div class="container pb-5">
+      <h2 class="mt-6">Github</h2>
+      <ul>
+        <li>Go to <a href="http://github.com">github.com</a> and create an account</li>
+        <li>Next, go to <a href="https://education.github.com/">https://education.github.com/</a> and apply for the education pack (this allows you to have features you usually have to pay for). Don't be tempted by all the services/deals they offer you at this point.</li>
+        <li>Download and install <a href="https://desktop.github.com/">Github Desktop</a></li>
+        <li>Log into Github desktop</li>
+      </ul>
+    </div>
+    <div class="container pb-5">
+      <h3 class="mt-6">Create your repository for the class</h3>
+      <ul>
+        <li>Open Github desktop and log in (you may need to go to Preferences->Accounts)</li>
+      <li>Add a repository for the class</li>
+        <ul>
+        	<li>Name it <i>game615-spring2019</i> (everything is case sensitive, so when I put something in quotes, type it EXACTLY like that)</li>
+        	<li>Make sure the repository is marked as "public"</li>
+        	<li>Select "Unity" for Git Ignore</li>
+        	<li>For Local Path put it wherever you like to keep your class files on your computer</li>
+        	<li>Check "Initialize this repository with a README"</li>
+        	<li>Click "Create Repository"</li>
+        </ul>
+        <li>Commit your changes to the repository "locally" by typing a brief summary of what you did in the Summary field (e.g. "Created the repository for game615") and click "Commit to master" (this should be on the bottom left of the window).</li>
+        <li>On the top/middle region of the screen, click "Publish repository"</li>
+        <li>Go to github.com/YOUR_USER_NAME/game615-spring2019 and check to see that there is something there!</li>
+      </ul>
+    </div>
+    <div class="container pb-5">
+      <h2 class="mt-6">Setting up your class replository for Github</h2>
+      <ul>
+        <li>In you the game615-spring2019 folder on your computer, create a folder called "exercises" (all lower case)</li>
+        <li>Create a Unity project named "exercise1", and make sure it is located inside the "exercises" folder</li>
+      </ul>
+    </div>
+    <div class="container pb-5">
+      <h3 class="mt-6">Preparing your Unity projects for Github</h3>
+      <p class="lead">NOTE: You'll need to do this for all of your projects</p>
+      <ul>
+        <li>With your project open in the Unity editor:</li>
+        <ul>
+      	   <li>Open the editor settings window. (Edit > Project Settings > Editor)</li>
+        </ul>
+      	<li>Make .meta files visible to avoid broken object references.</li>
+        <ul>
+          <li>Version Control / Mode: “Visible Meta Files”</li>
+        </ul>
+      	<li>Use plain text serialization to avoid unresolvable merge conflicts.</li>
+        <ul>
+      		<li>Asset Serialization / Mode: “Force Text”</li>
+        </ul>
+        <li>Save your changes. (File > Save Project)</li>
+      </ul>
+    </div>
+  </body>
+</html>
