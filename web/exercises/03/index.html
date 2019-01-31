@@ -47,48 +47,43 @@
     <div class="container pb-5">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h1 class="mt-5">Exercise 2: Launch Something!</h1>
+          <h1 class="mt-5">Exercise 3: Roll a Something!</h1>
           <p class="lead">GAME 615 - American University</p>
       </div>
     </div>
     <div class="container pb-5">
       <h2 class="mt-6">Description</h2>
-      <p>First off, name your Unity project "exercise02".</p>
+      <p>First off, name your Unity project "exercise03".</p>
       <p>
-        Modify the sample code to make something more interesting! We don't know
-        <i>too much</i> yet, so really challenge yourself to make something
-        compelling out of what we've covered so far.
+        For this assignment, you should complete the <a href="https://unity3d.com/learn/tutorials/s/roll-ball-tutorial">official Unity "Roll a Ball" tutorial</a>.
+        This tutorial does a good job of sumarizing what we've covered so far in class,
+        and should be a good way to confirm you are understanding the basics of
+        using Unity. It will also take several hours, so make sure you give yourself time to get it done this week.
+      </p>
+      <p>
+        In class, we also introduced <a href="http://poly.google.com">Google Poly</a>. So, to make
+        your version of the Roll a ball tutorial more interesting, download a model
+        from Google Poly, and have it roll around! To do this, you will need to do the following steps:
         <ul>
-          <li>Arranging shapes to knock eachother over</li>
-          <li>Launching things on fulcrum like things</li>
-          <li>Using custom colors</li>
+          <li>
+            Import the model into your game by placing it your Unity project's Assets folder
+            (make sure you copy everything from the zip file)
+          </li>
+          <li>
+            Make it so that the model's center point (or origin) is the actual center of the model.
+            If you click on the model in your scene, and the movement tool is not centered in your
+            model, you will need to do the following:
+          </li>
+          <ul>
+            <li>Create an empty game object</li>
+            <li>Move the model so that the model's center is placed exactly where the empty game object is</li>
+            <li>In the Hierarchy, select the model, and click and drag it onto the empty game object in the list</li>
+            <li>Now, give the empty game object a name, and when you click on it in the Hierarchy, the tool should appear at the center of the model</li>
+          </ul>
         </ul>
-      </p>
-      <p>
-        The sample code has A LOT of new material in it. As part of this
-        assignment, it is expected that you have carefully read through the code
-        and tried to follow how it works as best as you can. Please come to
-        office hours if you want any additional explainations. The two main
-        files you should look at are:
-        <ul>
-          <li>LaunchScript.cs</li>
-          <li>RingScript.cs</li>
-        </ul>
-        You can ignore most of the other files. NOTE: The '.meta' files are used
-        by Unity, and while necessary to make the game run, are not intended for
-        developers to read.
-      </p>
-    </div>
-    <div class="container pb-5">
-      <h2 class="mt-6">Getting the Sample Project Loaded into Your Project</h2>
-      <p>
-        To integrate the project into another Unity project, download and import the .unitypackage file located at the "CODE" link below.
-        In your own Unity project, go to Assets > Import Package > Custom Package...
-      </p>
-      <p>
-        Once you do this, all of the assets from the sample project will be loaded
-        into your project. Double click the "scene" file (the one with the Unity logo)
-        to actually open up the sample game.
+        <li>Give your model (or the parent game object from above) a SphereCollider component</li>
+        <li>Now, everything the tutorial tells you to do the ball, should be done to this game object</li>
+        <li>In the end, your model should roll around and it should look hilarious!</li>
       </p>
     </div>
 
@@ -101,7 +96,7 @@
           <li>Select "WebGL" and then click the "Switch Platform" button</li>
           <li>Click the "Build" button</li>
           <li>
-            When it asks you where you want to put your build, create a folder titled "web" in your exercise02 folder.
+            When it asks you where you want to put your build, create a folder titled "web" in your exercise03 folder.
             Once you do this, it will take several minutes to build your game.
           </li>
         </ul>
@@ -111,7 +106,7 @@
     <div class="container pb-5">
       <h2 class="mt-6">Submission</h2>
       <p>
-        Submit your project to github. Make sure your Unity project is titled "exercise2"
+        Submit your project to github. Make sure your Unity project is titled "exercise03"
         and located in the "exercises" folder of your local github repository. To push it up
         to github, open Github Desktop, commit your changes (you need to enter a comment in the field on the bottom left of the screen),
         and click the "Push" button near the top middle of the screen.
@@ -119,7 +114,7 @@
       <p>
         If everything worked, you should be able to play your game by going to:<br>
         <br>
-        http://(your git username).github.io/game615-spring2019/exercises/exercise02/web
+        http://(your git username).github.io/game615-spring2019/exercises/exercise03/web
       </p>
     </div>
     <div class="container pb-5">
