@@ -48,17 +48,74 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h1 class="mt-5">Exercise 4: Putting it all together</h1>
+          <p class="lead">TWO WEEK EXERCISE</p>
           <p class="lead">GAME 615 - American University</p>
       </div>
     </div>
     <div class="container pb-5">
       <h2 class="mt-6">Description</h2>
-      <p>First off, name your Unity project "exercise04".</p>
       <p>
-
-        <ul>
-          <li></li>
-        </ul>
+        This exercise is meant to give you the opportunity to creatively apply all of the
+        <a href="#topics">topics we've covered so far<a>. The goal is to apply every one of the topics we've covered in
+        class into a small game. The exercise will take place over two weeks and you
+        will be expected to come to class with Part 1 complete on week 1 and Part 2
+        complete on week 2.
+      </p>
+      <h3 class="mt-6">Part 1</h3>
+      <p>Name your Unity project "exercise04".</p>
+      <p>
+        In Part 1 of the assignment, create as much of a game as possible that applies
+        at least half 12 of the <a href="#topics">topics</a> from class. This will involve
+        conceiving of a small game that is made up of these technical topics. Constraints breed
+        creativity!
+      </p>
+      <p>
+        In class, be prepared to describe what you are attempting to create by the following week, as
+        well as being able to specifically point out how you applied your 12 technical topics. We will
+        spend the majority of class helping one another understand the remaining topics.
+      </p>
+      <h3 class="mt-6">Part 2</h3>
+      <p>
+        Apply the remaining technical topics, and complete your small game.
+      </p>
+    </div>
+    <div class="container pb-5" id="topics">
+      <h2 class="mt-6">Topics from Class</h2>
+      <p>
+        <ol type="A">
+          <li>Creating and modfying 3d primitive shapes in the Unity Editor</li>
+          <li>Creating and applying materials to Game Objects</li>
+          <li>Applying and configuring Rigidbody Physics components to Game Objects</li>
+          <li>Creating and applying custom components to Game Objects</li>
+          <li>Response to player input (Input.GetKeyDown(), Input.GetKey(), Input.GetAxis())</li>
+          <li>Making use of a game object transform's 'forward' vector</li>
+          <li>Computing the vector between two objects (and normalizing it)</li>
+          <li>Scaling a movement vector by Time.deltaTime (through multiplication) in order to ensure smooth continuous movement</li>
+          <li>Using gameObject.GetComponent() to get references to other components from within a custom component</li>
+          <li>Using GameObject.Find() to get references to other game objects in your scene</li>
+          <li>Directly giving a custom component a reference to another game object by declaring a 'public GameObject' variable in your comonent, and assigning the value to that reference in the Unity Editor (Inspector)</li>
+          <li>Making use of Random.Range() and Random.value to get random numbers</li>
+          <li>Creating user interface elements</li>
+          <li>Buttons: Calling a custom function when a button is clicked (the function needs to be 'public')</li>
+          <li>Downloading and applying <a href="http://dafont.com">custom fonts</a> to Text objects</li>
+          <li>Downloading and importing 3D models from <a href="http://poly.google.com">Google Poly</a></li>
+          <li>Positioning an object's origin by creating empty game objects, and repositioning 'child' objects (this is necessary with many Google Poly models)</li>
+          <li>Creating and configuring colliders (all game objects need to have a collider in order for Unity to recognize collisions - primitive 3d shapes have these by default, but imported Google Poly models need you to manually apply one)</li>
+          <li>Creating prefabs</li>
+          <li>Instantiating and configuring prefabs</li>
+          <li>Triggers: Making it so the OnTriggerEnter function is called when two objects collide</li>
+          <li>The timer pattern: Create a float variable with a value of the time you want to count down from. Decrease that variable by Time.deltaTime in your Update function. When that variable is less than zero, perform the action you want to have happen, and reset the countdown variable.</li>
+          <li>C# Programming:</li>
+          <ol type="a">
+            <li>Variables (creating, using, and modifying them)</li>
+            <li>Conditional statements and boolean expressions (i.e. controlling when code is ran based on the value of variables)</li>
+            <li>Calling functions (e.g. rigidbody.AddForce())</li>
+            <li>Implementing functions Unity automatically calls (e.g. Start, Update, and OnTriggerEnter)</li>
+            <li>Objects: Collections of variables and functions stored within a variable (e.g. Vector3, Color, Rigidbody, Material, Randerer, etc.)</li>
+            <li>Modifying objects and calling their functions using the dot ('.') syntax</li>
+            <li>Iteration: Repeat a section of code until a boolean expression evaluates to false</li>
+          </ol>
+        </ol>
       </p>
     </div>
     <div class="container pb-5">
@@ -70,7 +127,7 @@
           <li>Select "WebGL" and then click the "Switch Platform" button</li>
           <li>Click the "Build" button</li>
           <li>
-            When it asks you where you want to put your build, create a folder titled "web" in your exercise03 folder.
+            When it asks you where you want to put your build, create a folder titled "web" in your exercise04 folder.
             Once you do this, it will take several minutes to build your game.
           </li>
         </ul>
@@ -80,16 +137,27 @@
     <div class="container pb-5">
       <h2 class="mt-6">Submission</h2>
       <p>
-        Submit your project to github. Make sure your Unity project is titled "exercise03"
+        Submit your project to github. Make sure your Unity project is titled "exercise04"
         and located in the "exercises" folder of your local github repository. To push it up
         to github, open Github Desktop, commit your changes (you need to enter a comment in the field on the bottom left of the screen),
-        and click the "Push" button near the top middle of the screen.
+        and click the "Push origin" button near the top middle of the screen.
       </p>
       <p>
         If everything worked, you should be able to play your game by going to:<br>
         <br>
-        http://(your git username).github.io/game615-spring2019/exercises/exercise03/web
+        http://(your git username).github.io/game615-spring2019/exercises/exercise04/web
       </p>
+    </div>
+
+    <div class="container pb-5">
+      <h2 class="mt-6">Mike's Exercise 4</h2>
+      <p>
+        I'll also be creating a small game along with you. I will periodically update the project,
+        and it may be a helpful to puruse my code base to see how I am working with the limited
+        topics we've covered to achieve neat effects.
+      </p>
+      <a href="https://github.com/mtreanor/game615-spring2019/tree/master/examples/mikesExercise04/Assets" class="btn btn-primary">CODE</a>
+      <a href="../../../examples/mikesExercise04/web/" class="btn btn-primary">PLAY</a>
     </div>
 
   </body>

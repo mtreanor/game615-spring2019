@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 9e7e5c365310c414286cf04f5b4a4f63
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Midnight Drive
+  fontNames:
+  - Midnight Drive
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 322b05fbc1187492dac818443c139b9d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
