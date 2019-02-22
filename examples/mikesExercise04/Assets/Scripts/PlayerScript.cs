@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PlayerScript : MonoBehaviour
 	public bool moveTowardFork = false;
 	public float launchForce = 0;
 	float launchChargeRate = 20;
+
+	public GameObject startPanel;
 
 	// Start is called before the first frame update
 	void Start()
@@ -47,5 +50,10 @@ public class PlayerScript : MonoBehaviour
 			//	on to false. Also, 
 			moveTowardFork = false;
 		}
+	}
+
+	public void StartGame()
+	{
+		startPanel.SetActive(false);
 	}
 }
