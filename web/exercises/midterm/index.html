@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The course website for GAME 615 - Game Development at American University in 2019.">
+    <meta name="author" content="Mike Treanor">
+    <title>GAME 615 - Game Development - American University</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html">GAME 615 - Game Development</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#examples">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#exercises">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#syllabus">Syllabus</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+    <!-- CONTENT -->
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Midterm Project: A Complete (small) Game</h1>
+          <p class="lead">GAME 615 - American University</p>
+      </div>
+    </div>
+    <div class="container pb-5">
+      <h2 class="mt-6">Description</h2>
+      <p>
+        We’ve been making a lot of cool demos, but it is time to make a <i>complete</i> (see below)
+        game. Given how little time we have, you should limit your ambition and keep your game
+        small (and likely short). While there are no official requirements for what
+        type of game you make, it is expected that you demonstrate knowledge of the
+        concepts and techniques that we have covered in class.
+      </p>
+      <p>
+        The midterm is designed so that you can attempt to make something at whatever
+        skill level you feel you are at. I recommend trying to make something along the lines of what you already
+        worked on with the exercises: simple physics game (easiest), flight simulator (intermediate),
+        platformer (intermediate), top down simulation/RTS game (hard). Remember
+        to look at the sample code from class.
+      </p>
+      <h3 class="mt-5">What I Mean by a *Complete* Game</h3>
+      <p>
+        <ul>
+          <li>A start screen/menu (this can be as simple as your title and a “click to begin” button</li>
+          <li>Something that ends the gameplay and brings the player back to the main menu. Usually there would be a way to win, and a way to lose </li>
+          <li>During gameplay, there should be no way to “get stuck”</li>
+          <li>During gameplay, your world should be bounded (no falling off of cliffs forever, or flying off into infinity)</li>
+          <li><a href="https://www.youtube.com/results?search_query=Unity+audio">Audio?</a></li>
+          <li>Finally, try your best to get rid of anything that isn’t directly adding positively to the gameplay experience. This means that there shouldn’t be unnecessary long corridors, or hard to find collectables, etc.</li>
+        </ul>
+      </p>
+    </div>
+
+
+    <div class="container pb-5">
+      <h2 class="mt-6">Building your Project for the Web</h2>
+      <p>
+        <ul>
+          <li>Open the Build Settings (File > Build Settings...)</li>
+          <li>Click the Add Open Scenes button</li>
+          <li>Select "WebGL" and then click the "Switch Platform" button</li>
+          <li>Click the "Build" button</li>
+          <li>
+            When it asks you where you want to put your build, create a folder titled "web" in your midterm folder.
+            Once you do this, it will take several minutes to build your game.
+          </li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="container pb-5">
+      <h2 class="mt-6">Submission</h2>
+      <p>
+        Submit your project to github. Make sure your Unity project is titled "midterm"
+        and located in the "exercises" folder of your local github repository. To push it up
+        to github, open Github Desktop, commit your changes (you need to enter a comment in the field on the bottom left of the screen),
+        and click the "Push origin" button near the top middle of the screen.
+      </p>
+      <p>
+        If everything worked, you should be able to play your game by going to:<br>
+        <br>
+        http://(your git username).github.io/game615-spring2019/exercises/midterm/web
+      </p>
+    </div>
+
+    <!-- <div class="container pb-5">
+      <h2 class="mt-6">Basic 3D Platformer Sample Code</h2>
+      <p>
+
+      </p>
+      <a href="https://github.com/mtreanor/game615-spring2019/tree/master/examples/Platformer/Assets" class="btn btn-primary">CODE</a>
+      <a href="../../../examples/Platformer/web/" class="btn btn-primary">PLAY</a>
+    </div> -->
+
+  </body>
+</html>
