@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
 	float camFollowBehind = 5f;
 	float camFollowAbove = 3f;
 
+	public Animator animator;
+
 	// Start is called before the first frame update
 	void Start()
     {
@@ -90,6 +92,13 @@ public class PlayerController : MonoBehaviour
 		//CharacterController.
 		cc.Move(amountToMove);
 
+		//Play the correct animations by changing the 'moving' parameter in the Animator state machine
+		if (Mathf.Abs(vAxis) > 0) {
+			animator.SetBool("moving", true);
+		} else {
+			animator.SetBool("moving", false);
+		}
+
 		//Store our current previousIsGroundedValue (so we can do that check to see if we just
 		//landed above as described above)
 		//NOTE: After cc.Move() is called, cc.isGrounded is updated to relfect whether that Move()
@@ -102,6 +111,11 @@ public class PlayerController : MonoBehaviour
 		Vector3 cameraPosition = transform.position + (Vector3.up * camFollowAbove) + (-transform.forward * camFollowBehind);
 		Camera.main.transform.position = cameraPosition;
 		Camera.main.transform.LookAt(transform.position + transform.forward * camLookAhead);
+	}
+
+	private void OnCollisionEnter(Collision collision)
+	{
+		Debug.Log(collision.other.name);
 	}
 
 }
