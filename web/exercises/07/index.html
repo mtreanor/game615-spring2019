@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The course website for GAME 615 - Game Development at American University in 2019.">
+    <meta name="author" content="Mike Treanor">
+    <title>GAME 615 - Game Development - American University</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html">GAME 615 - Game Development</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#examples">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#exercises">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#syllabus">Syllabus</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+    <!-- CONTENT -->
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Exercise 7: Create a Short Narrative Cutscene</h1>
+          <p class="lead">GAME 615 - American University</p>
+      </div>
+    </div>
+    <div class="container pb-5">
+      <p>
+        <h2 class="mt-6">Description</h2>
+        Create a narrative introduction to a game (i.e. a cutscene). Don't worry
+        so much about polish and making it "complete". The goal is for you to get
+        practice with UI elements, the animaton system, and coroutines.
+      </p>
+      <p>
+        The requirements are:
+        <ul>
+          <li>Use at least one coroutine with WaitForSeconds</li>
+          <li>Use UI elements to present narrative text</li>
+          <li>USe at least two animations, and use the animator to switch between them</li>
+        </ul>
+      </p>
+      <p>
+        I encourage you to look at the resources/videos on the Unity webpage
+        about the Animation/Animator system if you haven't used it in a project yet.
+      </p>
+      <p>
+        Also, feel free to teach yourself about Unity's <a href="https://docs.unity3d.com/Manual/TimelineSection.html">Timeline"</a>
+        editor. This is a tool that you can use to create sequences of actions
+        inside the Unity editor (without much code). If you take this route, make
+        sure you also understand how coroutines work.
+      </p>
+
+    </div>
+
+    <div class="container pb-5">
+      <h2 class="mt-6">Building your Project for the Web</h2>
+      <p>
+        <ul>
+          <li>Open the Build Settings (File > Build Settings...)</li>
+          <li>Click the Add Open Scenes button</li>
+          <li>Select "WebGL" and then click the "Switch Platform" button</li>
+          <li>Click the "Build" button</li>
+          <li>
+            When it asks you where you want to put your build, create a folder titled "web" in your exercise07 folder.
+            Once you do this, it will take several minutes to build your game.
+          </li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="container pb-5">
+      <h2 class="mt-6">Submission</h2>
+      <p>
+        Submit your project to github. Make sure your Unity project is titled "exercise07"
+        and located in the "exercises" folder of your local github repository. To push it up
+        to github, open Github Desktop, commit your changes (you need to enter a comment in the field on the bottom left of the screen),
+        and click the "Push origin" button near the top middle of the screen.
+      </p>
+      <p>
+        If everything worked, you should be able to play your game by going to:<br>
+        <br>
+        http://(your git username).github.io/game615-spring2019/exercises/exercise07/web
+      </p>
+    </div>
+
+    <div class="container pb-5">
+      <h2 class="mt-6">Timed Events with Coroutines</h2>
+      <a href="https://github.com/mtreanor/game615-spring2019/tree/master/examples/CoroutinesForTimedEvents/Assets" class="btn btn-primary">CODE</a>
+      <a href="../../../examples/CoroutinesForTimedEvents/web/" class="btn btn-primary">PLAY</a>
+    </div>
+
+  </body>
+</html>
